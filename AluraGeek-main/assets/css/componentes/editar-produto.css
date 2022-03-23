@@ -1,0 +1,30 @@
+.produto_editar-imagem {
+    position: relative;
+}
+.produto_editar-icones {
+    position: absolute;
+    display: flex;
+    gap: .5rem;
+    top: .5rem;
+    right: .5rem;
+}
+.produto_editar-icones-icone {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-decoration: none;
+    cursor: pointer;
+}
+.produto_editar {
+    background-image: url(../../img/icones/edit.png);
+}
+.produto_excluir {
+    background-image: url(../../img/icones/delete.png);
+}
+.produto-codigo {
+    font-size: var(--tamanho-destaque);
+    font-weight: var(--peso-padrao);
+}

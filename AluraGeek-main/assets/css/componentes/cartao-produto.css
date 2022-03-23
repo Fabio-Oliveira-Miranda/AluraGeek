@@ -1,0 +1,37 @@
+.cartao-produto {
+    display: block;
+    font-weight: var(--peso-destaque);
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+.cartao-produto_imagem {
+    width: 100%;
+    padding-bottom: .5rem;
+}
+.cartao-produto_descricao {
+    font-weight: var(--peso-padrao);
+    padding-bottom: .5rem;
+}
+.cartao-produto_preco {
+    padding-bottom: .5rem;
+    color: var(--preto-claro);
+    font-size: var(--tamanho-destaque);
+}
+.cartao-produto_link {
+    color: var(--preto);
+    text-decoration: none;
+    font-size: var(--tamanho-destaque);
+}
+@media  screen and (min-width: 1366px) {
+    .cartao-produto {
+        margin: 1rem;
+    }
+    .cartao-produto:hover {
+        background-color: var(--cinza-claro);
+        color: var(--branco);
+        width: calc(100% + 1rem);
+        padding: .5rem;
+        margin: 0;
+    }   
+}

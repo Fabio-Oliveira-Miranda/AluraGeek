@@ -1,0 +1,81 @@
+.galeria article:nth-last-child(-n+2) {
+    display: none;
+}
+@media screen and (min-width: 1366px) {
+    .galeria article:nth-last-child(-n+2) {
+        display: block;
+    }
+}
+/*HEADER LISTA*/
+.galeria_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/ span 2;
+}
+@media screen and (min-width: 700px) {
+    .galeria_header {
+        grid-column: 1 / span 4;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .galeria_header {
+        grid-column: 1 / span 6;
+    }
+}
+.galeria_titulo {
+    display: flex;
+    align-items: center;
+}
+.galeria_titulo-icone {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: .5rem;
+}
+.galeria_titulo-icone-sw {
+    background-image: url(../../img/icones/starwars-2.png);
+}
+.galeria_titulo-icone-console {
+    background-image: url(../../img/icones/console.png);
+}
+.galeria_titulo-icone-diversos {
+    background-image: url(../../img/icones/diversos.png);
+}
+.galeria_header-link {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: var(--peso-destaque);
+    display: flex;
+    align-items: center;
+}
+.galeria_header-link i {
+    display: block;
+    padding-left: .5rem;
+    width: .875rem;
+    height: .875rem;
+    background-image: url(../../img/icones/seta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media  screen and (min-width: 700px) {
+    .galeria_titulo-icone {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
+    }
+    .galeria_header-link {
+        font-size: var(--tamanho-destaque);
+    }
+    .galeria_header-link i {
+        display: block;
+        padding-left: .5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+/*HEADER LISTA*/

@@ -1,0 +1,30 @@
+.botao {
+    font-weight: var(--peso-botao);
+    padding: .8rem 1.6rem;
+    max-height: 2.8rem;
+}
+.botao-primario {
+    color: var(--branco);
+    background-color: var(--preto);
+    border: none;
+    box-shadow: var(--sombra);
+}
+.botao-secundario {
+    color: var(--preto-claro);
+    background-color: var(--branco);
+    border: 1px solid var(--preto-claro);
+    box-shadow: var(--sombra);
+}
+@media screen and (min-width: 1366px) {
+    .botao-primario:hover {
+        background-color: var(--cinza-claro);
+    }
+    .botao-secundario:hover {
+        background-color: var(--preto-claro);
+        color: var(--branco);
+    }
+    #cabecalho_botao-login {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

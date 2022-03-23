@@ -1,0 +1,71 @@
+@import url(reset.css);
+@import url(variavies.css);
+@import url(../componentes/botao.css);
+@import url(../componentes/cabecalho.css);
+@import url(../componentes/logotipo.css);
+@import url(../componentes/rodape.css);
+@import url(../componentes/input.css);
+
+body {
+    font-family: var(--familia-fonte);
+    font-size: var(--tamanho-corpo-mobile);
+    @media screen and (min-width: 1366px) {
+        font-size: var(--tamanho-corpo);
+    }
+    color: var(--preto-claro);
+    background-color: var(--branco);
+}
+.texto-destaque {
+    font-weight: var(--peso-destaque);
+}
+.container {
+    padding: 0 1rem;
+}
+.banner_titulo {
+    font-size: var(--tamanho-titulo);
+    line-height: 1.563rem;
+}
+.banner_descricao {
+    font-size: var(--tamanho-descricao-banner);
+    line-height: 1.028rem;
+}
+@media screen and (min-width: 700px) {
+    .banner {
+        height: 352px;
+    }
+    .banner_titulo {
+        font-size: var(--tamanho-titulo-notmobile);
+        line-height: 4.063rem;
+    }
+    .banner_descricao {
+        font-size: var(--tamanho-descricao-notmobile);
+        line-height: 1.563rem;
+    }
+}
+.container {
+    padding: 1rem 1rem;
+}
+@media screen and (min-width: 700px) {
+    .container {
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .container {
+        padding: 2rem 5rem;
+    }
+}
+.galeria_titulo {
+    font-size: 1.375rem;
+    line-height: 1.563rem;
+}
+@media  screen and (min-width: 700px) {
+    .galeria_titulo {
+        font-size: 2rem;
+        line-height: 4.063rem;
+    }
+    .galeria_titulo-icone {
+        width: 3.25rem;
+        height: 4.063rem;
+    }
+}

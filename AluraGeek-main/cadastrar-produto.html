@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/componentes/input.css">
+    <link rel="stylesheet" href="assets/css/cadastrar-produto.css">
+    <title>Home | Alura Geek</title>
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <div>
+            <img src="assets/img/logotipo/logo.svg" alt="Logotipo da Alura Geek Store" class="logotipo">
+            <!--DESKTOP-->
+            <div class="pesquisa cabecalho_pesquisa-desktop">
+                <input class="cabecalho_pesquisa-campo-desktop" id="pesquisa-desktop">
+                <label for="pesquisa-desktop">
+                    <img src="assets/img/icones/lupa.svg" alt="Pesquisar na loja"
+                        class="cabecalho_pesquisa-icone-desktop">
+                </label>
+            </div>
+            <!--desktop-->
+        </div>
+        <button class="botao botao-secundario" id="cabecalho_botao-login">Login</button>
+        <!--MOBILE-->
+        <div class="pesquisa cabecalho_pesquisa">
+            <input class="cabecalho_pesquisa-campo" id="pesquisa">
+            <label for="pesquisa">
+                <img src="assets/img/icones/lupa.svg" alt="Pesquisar na loja" class="cabecalho_pesquisa-icone">
+            </label>
+        </div>
+        <!--mobile-->
+        <script src="assets/js/cabecalho-pesquisa.js"></script>
+    </header>
+    <main class="container">
+        <section class="cadastrar-produto">
+            <h2 class="texto-destaque cadastrar-produto_titulo">Adicionar novo produto</h2>
+            <div class="cadastrar-produto_iserir-foto">
+                <img src="assets/img/inserir-foto-produto-mobile.svg" alt="Inserir foto do produto">
+                <img src="assets/img/inserir-foto-produto.svg" alt="Inserir foto do produto">
+                <p>Ou</p>
+                <button class="botao botao-secundario cadastrar-produto_botao"></button>
+            </div>
+            <form class="cadastrar-produto_form">
+                <input type="text" class="entrada-texto cadastrar-produto_form-input" placeholder="Nome do produto" aria-label="Nome do produto">
+                <input type="text" class="entrada-texto cadastrar-produto_form-input" placeholder="Preço do produto" aria-label="Preço do produto">
+                <textarea class="entrada-texto cadastrar-produto_form-input" placeholder="Descrição do produto"
+                    aria-label="Descrição do produto"></textarea>
+                <button class="botao botao-primario">Adicionar produto</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="container rodape_container">
+            <div>
+                <img src="assets/img/logotipo/logo.svg" class="logotipo rodape_logo">
+                <ul class="rodape_links">
+                    <li><a href="#" class="rodape_links-link">Quem somos nós</a></li>
+                    <li><a href="#" class="rodape_links-link">Política de privacidade</a></li>
+                    <li><a href="#" class="rodape_links-link">Programa de fidelidade</a></li>
+                    <li><a href="#" class="rodape_links-link">Nossas lojas</a></li>
+                    <li><a href="#" class="rodape_links-link">Quero ser franqueado</a></li>
+                    <li><a href="#" class="rodape_links-link">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form class="rodape_contato">
+                <label class="rodape_contato-item contato_titulo-destaque">Fale conosco</label>
+                <input class="rodape_contato-item rodape_contato-input entrada-texto" type="text" placeholder="Nome"
+                    aria-label="Nome">
+                <textarea class="rodape_contato-item rodape_contato-input entrada-texto"
+                    placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                <button class="rodape_contato-botao rodape_contato-item botao botao-secundario">Enviar mensagem</button>
+            </form>
+        </section>
+        <section class="rodape_creditos texto-destaque">
+            <p>Desenvolvido por Fabio_o <br>&copy; 2022</p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.entrada-texto {
+    padding: 1rem;
+    font-size: var(--tamanho-destaque);
+    line-height: 22px;
+    font-family: var(--familia-fonte);
+    border-radius: 5px;
+}

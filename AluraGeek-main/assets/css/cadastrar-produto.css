@@ -1,0 +1,49 @@
+.cadastrar-produto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.cadastrar-produto_iserir-foto {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cadastrar-produto_iserir-foto :first-child {
+    width: 100%;
+}
+.cadastrar-produto_iserir-foto :nth-last-child(-n+3) {
+    display: none;
+}
+.cadastrar-produto_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cadastrar-produto_form-input {
+    border: 1px solid var(--preto-claro);
+}
+.cadastrar-produto_titulo {
+    font-size: var(--tamanho-titulo);
+}
+@media screen and (min-width: 700px) {
+    .cadastrar-produto_iserir-foto :first-child {
+        display: none;
+    }
+    .cadastrar-produto_iserir-foto :nth-last-child(-n+3) {
+        display: block;
+    }
+    .cadastrar-produto_botao::before {
+        content: "Procure no seu tablet";
+    }
+}
+@media screen and (min-width: 1366px) {
+    .cadastrar-produto {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .cadastrar-produto_botao::before {
+        content: "Procure no seu computador";
+    }
+}
